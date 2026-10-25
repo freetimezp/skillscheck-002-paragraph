@@ -20,6 +20,10 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 [hidden] {
     display: none !important;
 }
@@ -27,10 +31,12 @@
 body {
     min-height: 100vh;
     padding: 0 24px;
+
     color: var(--text);
     background:
         radial-gradient(ellipse at 50% 0%, #292b1c 0%, transparent 42%),
         var(--bg);
+
     font-family: var(--sans);
     -webkit-font-smoothing: antialiased;
 }
@@ -58,10 +64,12 @@ input:focus-visible + .option-control {
 
 .topbar {
     height: 80px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 15px;
+
     border-bottom: 1px solid var(--line);
 }
 
@@ -69,8 +77,8 @@ input:focus-visible + .option-control {
     display: flex;
     align-items: center;
     gap: 10px;
+
     color: var(--text);
-    text-decoration: none;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: -0.4px;
@@ -79,10 +87,13 @@ input:focus-visible + .option-control {
 .brand-icon {
     display: grid;
     place-items: center;
+
     width: 35px;
     height: 35px;
+
     border-radius: 9px;
     background: var(--accent);
+
     color: var(--bg);
     font: 12px var(--mono);
 }
@@ -110,8 +121,10 @@ input:focus-visible + .option-control {
 
 .lesson-tag {
     padding: 9px 11px;
+
     border: 1px solid #42472c;
     border-radius: 4px;
+
     color: var(--accent);
     white-space: nowrap;
 }
@@ -126,21 +139,26 @@ input:focus-visible + .option-control {
     display: flex;
     align-items: center;
     gap: 10px;
+
     color: var(--muted);
 }
 
 .status-dot {
     width: 7px;
     height: 7px;
+
     border-radius: 50%;
     background: var(--accent);
+
     box-shadow: 0 0 12px #d9ff4366;
 }
 
 .hero h1 {
     position: relative;
     z-index: 1;
+
     margin-top: 24px;
+
     font-size: clamp(58px, 10vw, 94px);
     line-height: 0.88;
     letter-spacing: -0.085em;
@@ -153,8 +171,10 @@ input:focus-visible + .option-control {
 .hero-copy {
     position: relative;
     z-index: 1;
+
     max-width: 430px;
     margin-top: 25px;
+
     color: #afb0a5;
     font-size: 15px;
     line-height: 1.85;
@@ -164,7 +184,9 @@ input:focus-visible + .option-control {
     display: flex;
     flex-wrap: wrap;
     gap: 12px 22px;
+
     margin-top: 27px;
+
     color: var(--muted);
     font-size: 8px;
 }
@@ -173,10 +195,12 @@ input:focus-visible + .option-control {
     position: absolute;
     top: 85px;
     right: 15px;
+
     color: #d9ff4315;
     font-size: 240px;
     font-weight: 700;
     line-height: 1;
+
     transform: rotate(12deg);
     pointer-events: none;
 }
@@ -184,8 +208,10 @@ input:focus-visible + .option-control {
 .quiz-card,
 .results-card {
     padding: 30px;
+
     border: 1px solid var(--line);
     border-radius: 12px;
+
     background: linear-gradient(145deg, #1c1d19, #171815);
     box-shadow: 0 25px 70px #0002;
 }
@@ -195,6 +221,7 @@ input:focus-visible + .option-control {
     align-items: center;
     justify-content: space-between;
     gap: 15px;
+
     margin-bottom: 20px;
 }
 
@@ -207,6 +234,7 @@ input:focus-visible + .option-control {
 .question-counter,
 .score-display p {
     margin-top: 7px;
+
     font-size: 15px;
     font-weight: 500;
 }
@@ -233,6 +261,7 @@ input:focus-visible + .option-control {
     height: 4px;
     margin-bottom: 32px;
     overflow: hidden;
+
     border-radius: 20px;
     background: #30312b;
 }
@@ -240,6 +269,7 @@ input:focus-visible + .option-control {
 .progress-fill {
     width: 5%;
     height: 100%;
+
     border-radius: inherit;
     background: var(--accent);
     transition: width 0.35s ease;
@@ -264,7 +294,9 @@ input:focus-visible + .option-control {
     display: inline-flex;
     align-items: center;
     gap: 8px;
+
     margin-bottom: 18px;
+
     color: var(--accent);
     font-size: 9px;
 }
@@ -273,12 +305,14 @@ input:focus-visible + .option-control {
     content: "";
     width: 5px;
     height: 5px;
+
     border-radius: 1px;
     background: var(--accent);
 }
 
 .question-title {
     max-width: 650px;
+
     font-size: clamp(22px, 4vw, 30px);
     line-height: 1.35;
     letter-spacing: -0.8px;
@@ -286,6 +320,7 @@ input:focus-visible + .option-control {
 
 .question-hint {
     margin-top: 10px;
+
     color: var(--muted);
     font-size: 13px;
     line-height: 1.7;
@@ -295,8 +330,10 @@ input:focus-visible + .option-control {
     margin-top: 23px;
     padding: 17px 19px;
     overflow-x: auto;
+
     border: 1px solid #30312b;
     border-radius: 7px;
+
     background: #10110f;
 }
 
@@ -324,11 +361,15 @@ input:focus-visible + .option-control {
     display: flex;
     align-items: flex-start;
     gap: 13px;
+
     padding: 14px 15px;
+
     border: 1px solid #30312b;
     border-radius: 7px;
+
     background: #20211d;
     cursor: pointer;
+
     transition:
         border-color 0.2s,
         background 0.2s,
@@ -356,11 +397,14 @@ input:focus-visible + .option-control {
     display: grid;
     flex: 0 0 20px;
     place-items: center;
+
     width: 20px;
     height: 20px;
     margin-top: 1px;
+
     border: 1px solid #65665b;
     border-radius: 5px;
+
     color: transparent;
     font-size: 12px;
 }
@@ -414,6 +458,7 @@ input:focus-visible + .option-control {
     align-items: center;
     justify-content: space-between;
     gap: 15px;
+
     margin-top: 27px;
 }
 
@@ -425,14 +470,17 @@ input:focus-visible + .option-control {
 
 .primary-btn {
     display: inline-flex;
-    min-height: 47px;
     align-items: center;
     justify-content: center;
     gap: 16px;
+
+    min-height: 47px;
     padding: 0 18px;
+
     border: none;
     border-radius: 6px;
     background: var(--accent);
+
     color: #171813;
     font-size: 12px;
     font-weight: 700;
@@ -453,8 +501,10 @@ input:focus-visible + .option-control {
 .feedback {
     margin-top: 22px;
     padding: 16px;
+
     border: 1px solid var(--line);
     border-radius: 7px;
+
     background: #20211d;
     animation: reveal 0.3s ease both;
 }
@@ -492,11 +542,14 @@ input:focus-visible + .option-control {
 .result-symbol {
     display: grid;
     place-items: center;
+
     width: 65px;
     height: 65px;
     margin: 0 auto 23px;
+
     border-radius: 18px;
     background: var(--accent);
+
     color: #171813;
     font-size: 31px;
     transform: rotate(-8deg);
@@ -516,6 +569,7 @@ input:focus-visible + .option-control {
 .result-copy {
     max-width: 420px;
     margin: 13px auto 0;
+
     color: #afb0a5;
     font-size: 14px;
     line-height: 1.8;
@@ -524,8 +578,10 @@ input:focus-visible + .option-control {
 .result-stats {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+
     margin: 30px 0;
     padding: 23px 0;
+
     border-top: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
 }
@@ -542,6 +598,7 @@ input:focus-visible + .option-control {
 
 .result-message {
     margin-bottom: 23px;
+
     color: var(--muted);
     font-size: 13px;
     line-height: 1.7;
@@ -559,13 +616,16 @@ input:focus-visible + .option-control {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+
     margin-top: 17px;
 }
 
 .topic-list span {
     padding: 10px 12px;
+
     border: 1px solid var(--line);
     border-radius: 5px;
+
     color: #b0b1a5;
     font-size: 9px;
     letter-spacing: 0.5px;
@@ -573,10 +633,12 @@ input:focus-visible + .option-control {
 
 .site-footer {
     min-height: 78px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 15px;
+
     border-top: 1px solid var(--line);
     color: #77786e;
     font-size: 8px;
