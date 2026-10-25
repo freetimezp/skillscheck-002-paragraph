@@ -1,18 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#10110f" />
+        <meta
+            name="description"
+            content="Test your HTML paragraph and CSS typography skills with 20 randomized questions and code examples."
+        />
+        <title>SkillsCheck 002 — Paragraph Typography</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <div class="app">
+            <header class="topbar">
+                <a href="#" class="brand">
+                    <span class="brand-icon">&lt;/&gt;</span>
+                    <span>SKILLS<span class="brand-muted">CHECK</span></span>
+                </a>
+                <span class="lesson-tag">ASSESSMENT / 002</span>
+            </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Project</title>
-</head>
+            <main>
+                <section class="hero">
+                    <div class="eyebrow">
+                        <span class="status-dot"></span>
+                        HTML + CSS FUNDAMENTALS
+                    </div>
 
-<body>
-    start
+                    <h1>READ<br /><span>BETWEEN</span><br />THE LINES.</h1>
 
-    <script src="./assets/js/main.js"></script>
-</body>
+                    <p class="hero-copy">
+                        Great typography is invisible. Test your ability to
+                        build paragraphs that feel clear, balanced, and easy to
+                        read.
+                    </p>
 
+                    <div class="hero-meta">
+                        <span>20 QUESTIONS</span>
+                        <span>HTML / CSS</span>
+                        <span>BEGINNER LEVEL</span>
+                    </div>
+
+                    <div class="hero-decoration" aria-hidden="true">¶</div>
+                </section>
+
+                <section class="quiz-card" id="quizCard">
+                    <div class="quiz-header">
+                        <div>
+                            <span class="small-label">YOUR PROGRESS</span>
+                            <p class="question-counter">
+                                Question <strong id="currentNumber">01</strong>
+                                <span>/ 20</span>
+                            </p>
+                        </div>
+                        <div class="score-display">
+                            <span class="small-label">YOUR SCORE</span>
+                            <p>
+                                <strong id="score">0</strong><span> pts</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="progress-track"
+                        role="progressbar"
+                        aria-label="Quiz progress"
+                        aria-valuemin="0"
+                        aria-valuemax="20"
+                        aria-valuenow="0"
+                        id="progressTrack"
+                    >
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+
+                    <div id="questionArea"></div>
+
+                    <div class="quiz-footer" id="quizFooter">
+                        <span class="footer-hint" id="footerHint">
+                            TAKE YOUR TIME.
+                        </span>
+                        <button class="primary-btn" id="checkBtn" type="button">
+                            Check answer <span>↗</span>
+                        </button>
+                    </div>
+
+                    <div
+                        class="feedback"
+                        id="feedback"
+                        aria-live="polite"
+                        hidden
+                    ></div>
+
+                    <div class="next-row" id="nextRow" hidden>
+                        <span id="answerStatus"></span>
+                        <button class="primary-btn" id="nextBtn" type="button">
+                            Next question →
+                        </button>
+                    </div>
+                </section>
+
+                <section class="results-card" id="resultsCard" hidden>
+                    <div class="result-symbol" id="resultSymbol">✳</div>
+                    <span class="eyebrow result-eyebrow"
+                        >ASSESSMENT COMPLETE</span
+                    >
+                    <h2 id="resultTitle">WELL DONE.</h2>
+                    <p class="result-copy" id="resultCopy"></p>
+
+                    <div class="result-stats">
+                        <div>
+                            <span class="small-label">FINAL SCORE</span>
+                            <strong id="finalScore">0 / 20</strong>
+                        </div>
+                        <div>
+                            <span class="small-label">ACCURACY</span>
+                            <strong id="accuracy">0%</strong>
+                        </div>
+                        <div>
+                            <span class="small-label">CORRECT</span>
+                            <strong id="correctTotal">0 / 20</strong>
+                        </div>
+                    </div>
+
+                    <div class="result-message" id="resultMessage"></div>
+
+                    <button
+                        class="primary-btn restart-btn"
+                        id="restartBtn"
+                        type="button"
+                    >
+                        ↻ Try again with new questions order
+                    </button>
+                </section>
+
+                <section class="topic-guide">
+                    <span class="small-label">WHAT YOU'RE TESTING</span>
+                    <div class="topic-list">
+                        <span>01 / Paragraphs</span>
+                        <span>02 / Line height</span>
+                        <span>03 / Readable width</span>
+                        <span>04 / Font properties</span>
+                        <span>05 / Spacing</span>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="site-footer">
+                <span>LEARN IT. BUILD IT. PROVE IT.</span>
+                <span>SCHOOL / 002</span>
+            </footer>
+        </div>
+
+        <script src="./assets/js/main.js" defer></script>
+    </body>
 </html>
